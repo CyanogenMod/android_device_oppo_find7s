@@ -12,15 +12,15 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-LOCAL_PATH := $(call my-dir)
+# Inherit from those products. Most specific first.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-include $(CLEAR_VARS)
+# Inherit from find7s device
+$(call inherit-product, device/oppo/find7s/find7s.mk)
 
-LOCAL_MODULE := nfc.msm8974
-LOCAL_MODULE_PATH := $(TARGET_OUT_SHARED_LIBRARIES)/hw
-LOCAL_SRC_FILES := nfc_hw.c
-LOCAL_SHARED_LIBRARIES := liblog libcutils
-LOCAL_MODULE_TAGS := optional
-LOCAL_CFLAGS += -D$(TARGET_DEVICE)
-
-include $(BUILD_SHARED_LIBRARY)
+# Discard inherited values and use our own instead.
+PRODUCT_NAME := full_find7s
+PRODUCT_DEVICE := find7s
+PRODUCT_BRAND := OPPO
+PRODUCT_MANUFACTURER := OPPO
+PRODUCT_MODEL := Find7
