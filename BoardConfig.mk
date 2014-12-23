@@ -18,4 +18,4 @@
 -include device/oppo/find7-common/BoardConfigCommon.mk
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := find7,find7a,find7s,X9007,X9006,FIND7
+TARGET_OTA_ASSERT_DEVICE := find7,find7s,FIND7,X9076,X9077
