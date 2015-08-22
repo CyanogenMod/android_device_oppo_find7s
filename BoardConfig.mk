@@ -20,6 +20,10 @@
 # Assert
 TARGET_OTA_ASSERT_DEVICE := find7,find7s,FIND7,X9076,X9077
 
+# Charger
 RED_LED_PATH := "/sys/class/leds/led:rgb_red/brightness"
 GREEN_LED_PATH := "/sys/class/leds/led:rgb_green/brightness"
 BLUE_LED_PATH := "/sys/class/leds/led:rgb_blue/brightness"
+
+# Properties
+TARGET_SYSTEM_PROP += device/oppo/find7s/system.prop

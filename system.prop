@@ -1,6 +1,2 @@
-#
-# system.prop for find7s
-#
-
 ro.sf.lcd_density=640
 ro.oppo.device=find7s
