@@ -1,3 +1,0 @@
-add_lunch_combo cm_find7s-user
-add_lunch_combo cm_find7s-userdebug
-add_lunch_combo cm_find7s-eng
